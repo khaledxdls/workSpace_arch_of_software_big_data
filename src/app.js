@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.send(`
         <form action="/echo_user_input" method="POST">
-            <input name="user_input" type="text" placeholder="Enter some text">
+            <input name="user_input" type="text" placeholder="Enter what you want to echo" required />
             <button type="submit">Submit!</button>
         </form>
     `);
